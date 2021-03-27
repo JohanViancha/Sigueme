@@ -1,0 +1,185 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Major Mono Display', monospace;
+}
+
+header{
+	width: 100%;
+	height: 70px;
+	box-sizing: border-box;
+	background: #546CFF;
+	color: #FFF;
+	text-shadow: 1px 2px 2px;
+	margin-bottom: 40px;
+}
+
+
+
+header .fa-playstation{
+	float: left;
+	position: absolute;
+	top: 10px;
+	left: 30px ;
+	font-size: 50px;
+}
+
+header .fa-play-circle{
+	float: right;
+	font-size: 30px;
+	line-height: 1.8;
+}
+
+header h2{
+	display: inline;
+	line-height: 2;
+}
+
+header .iniciar{
+	display: inline-block;
+	width: 220px;
+	height: 52px;
+	position: absolute;
+	top: 0px;
+	right:90px;
+	margin-top: 8px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+header h1{
+	line-height: 2;
+	position: absolute;
+	top: 3px;
+	left: 100px;
+}
+
+.caja{
+	padding: 10px;
+	box-sizing: border-box;
+	background: #FFF;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px #ccc;
+	text-align: center;
+	cursor: pointer;
+}
+
+.iluminar{
+	opacity: 0.2;
+}
+
+.puntajes{
+	width: 40%;
+	float: left;
+	margin-left: 2%;
+	height: auto;
+	overflow: hidden;
+}
+
+.juego{
+	width: 53%;
+	margin-left: 3%;
+	float: left;
+	height: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.juego section{
+	width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#tb_puntajes{
+	text-align: center;
+	width: 100%;
+}
+#tb_puntajes td,#tb_puntajes th {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+.deseleccionar{
+	background: #FFF !important;
+	color: #000 !important;
+}
+.figura{
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	box-shadow: -3px 3px 10px #ccc;
+	border: 4px solid #FFF;
+}
+.izquierda-arriba{
+	background: #6BE8AA;
+	border-radius: 100% 0px 0px 0px;
+	display: inline-block;
+	float: left;
+}
+.derecha-arriba{
+	background: #DAFF85;
+	border-radius:  0px 100% 0px 0px ;
+	float: left;
+}
+
+.derecha-abajo{
+	background: #FF9694;
+	border-radius:  0px 0px 100% 0px ;
+	float: right;
+}
+
+.izquierda-abajo{
+	background: #47C1FF;
+	border-radius:  0px 0px 0px 100%;
+	display: inline-block;
+}
+
+
+.empezar{
+	width: 300px;
+	height: 50px;
+	background: #546CFF;
+	color: #FFF;
+	border: 0px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.empezar:hover{
+	background: #3F50BF;
+	box-shadow: 3px 3px 10px #2A3580;
+}
+
+.blankear{
+	background: #FFF !important;
+	color: #000 !important;
+}
+.parpadeo{
+	animation: 2s parpadear 3;
+}
+
+@keyframes parpadear{
+	0%{
+		background: #546cff47;
+	}
+
+	100%{
+		background: #546CFF;
+	}
+
+}
+
+.cronometro{
+	margin-top: 20px;
+
+}
+
+.tiempo{
+	font-size: 30px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	padding: 5px;
+}

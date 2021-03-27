@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video Juego Secuencia</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+ 
+</head>
+<body>
+
+	<header>
+		<i class="icono-header fab fa-playstation"></i>
+		<h1>¿Adivina que?</h1>
+
+		<section class="iniciar" id="inicio" onclick="iniciar()">
+			<h2 class="">Iniciar</h1>
+			<i class="icono-header fas fa-play-circle"></i>
+		</section>
+	</header>
+	
+	<aside class="caja puntajes">
+		<table class="tb_puntajes" id="tb_puntajes">
+			<caption>Mejores Puntajes</caption>
+			<thead>	
+				<th>Nombre</th>
+				<th>Nivel Alcanzado</th>
+				<th>Tiempo</th>
+			</thead>
+		</table>
+
+
+
+	</aside>
+
+	<main class="caja juego">
+		<button class="empezar" id="empezar"><i class="fas fa-play"></i>¡Empezar a jugar!</button>
+
+		<section>
+			<div id="primero" class="figura azul izquierda-arriba"></div>
+			<div id="segundo"class="figura verde derecha-arriba"></div>
+			<div id="tercero" class="figura rojo izquierda-abajo"></div>
+			<div id="cuarto" class="figura naranja derecha-abajo"></div>	
+		</section>
+		<div class="cronometro">
+			<span id="tiempo"></span>
+		</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
